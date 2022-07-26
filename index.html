@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJAX</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <style>
+      body {
+        background-color: #f4f4f4;
+      }
+      .item {
+        background-color: #fff;
+        border: 1px solid #000;
+        padding: 10px 50px;
+        margin: 10px;
+        position: relative;
+      }
+
+      .item button {
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+
+      .item .edit {
+        position: absolute;
+        right: 50px;
+        top: 35%;
+      }
+      .item .delete {
+        position: absolute;
+        right: 50px;
+        top: 55%;
+      }
+
+      /* -------------------------------------- */
+      @keyframes spinner-border {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .submit-spinner {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        vertical-align: -0.125em;
+        border: 3px solid currentColor;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: 0.75s linear infinite spinner-border;
+        animation: 0.75s linear infinite spinner-border;
+      }
+
+      .submit-spinner_hide {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="userList"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
